@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PileUpApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+    <div class="header-wrapper">
+      <div class="cont">
+        <div class="header-left">
+          <a href="/">
+            <img src="/pile-up.png" alt="">
+          </a>
+        </div>
+
+    <% @current_user = User.find_by(id: session[:user_id]) %>
+
+     
+        <div class="header-right">
+          <div class="header-link">
+            <a ><%= link_to("ピラプってなに？","/about") %></a>
+            <a><%= link_to("新規登録", "/signup") %></a>
+            <a><%= link_to("ログイン", "/login") %></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <%= yield %>
+
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<div class="signup-wrapper">
+  <div class="cont">
+    <div class="signup-wrapper-main">
+          <div class="signup-title">
+           <h1>新規登録</h1>
+          </div>
+          <div class="signup-contents">
+
+            <div class="signup-content signup-1">
+            <%= form_tag("/users/create") do %>
+              <p>ユーザー名</p>
+              <p><input class="signup-time" type="text" name="name" value="<%= @user.name %>"></P>
+            </div>
+
+            <div class="signup-content signup-2">
+              <p>メールアドレス</p>
+              <input class="signup-thing" type="text" name="email" value="<%= @user.email %>">
+            </div>
+
+            <div class="signup-content signup-2">
+              <p>パスワード</p>
+              <input class="signup-thing" type="password" name="password" value="<%= @user.password %>">
+            </div>
+
+            <input class="edit-submit" type="submit" name="" value="新規登録">
+          <% end %>
+          
+          </div>
+          
+    </div>
+  </div>
+</div>

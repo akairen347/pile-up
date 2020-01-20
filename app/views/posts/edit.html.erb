@@ -1,0 +1,33 @@
+<div class="edit-wrapper">
+      <div class="cont">
+        <div class="edit-wrapper-main">
+          <div class="edit-title">
+           <h1>今日の積み上げ</h1>
+          </div>
+          <div class="edit-contents">
+
+            <div class="edit-content edit-1">
+              <p>今日の積み上げ時間</p>
+              <%= form_tag("/posts/#{@post.id}/update") do %>
+              <p><textarea class="edit-time" type="text" name="time" value="<%= @post.time %>">   </textarea>分</P>
+            </div>
+
+            <div class="edit-content edit-2">
+              <p>今日やったこと</p>
+              <textarea class="edit-thing" type="text" name="type" value="<%= @post.type %>">   </textarea>
+            </div>
+
+            <div class="edit-content">
+              <p>具体的な内容</p>
+              
+              <textarea name="content" rows="8" cols="80" value="<%= @post.content %>" > </textarea>
+              <% end  %>
+            </div>
+
+
+
+          </div>
+          <input class="edit-submit" type="submit" name="" value="投稿">
+        </div>
+      </div>
+    </div>

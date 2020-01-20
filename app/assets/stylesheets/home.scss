@@ -1,0 +1,164 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.header-wrapper {
+    width: 100%;
+    height: 70px;
+    background-color: #ffff;
+  }
+  
+  .header-left {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    margin-left: 30px;
+  }
+  
+  .header-left a {
+  
+  }
+  
+  .header-left img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .header-right {
+    display: inline-block;
+    width: 500px;
+    float: right;
+    padding-top: 20px;
+  }
+  
+  .header-link {
+  
+  }
+  
+  .header-link a {
+  margin-left: 30px;
+  color: black;
+  }
+  
+  .header-link :hover {
+    text-decoration: none;
+    color: black
+  }
+  
+  
+  
+  
+  
+  
+  .main-wrapper {
+    background-image: url('/pile-up1.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .main-wrapper-main {
+    margin: 100px 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background:rgba(255,255,255,0.7);
+    width: 500px;
+    height: 600px;
+    border-radius: 100px;
+    display: inline-block;
+  }
+  
+  .main-title {
+  
+  }
+  
+  .main-title h1 {
+    font-size: 56px;
+  }
+  
+  .main-title p {
+    font-size: 24px;
+  }
+  
+  .main-btn {
+   padding-top: 50px;
+  }
+  
+  .main-btn a {
+    color: #ffff;
+    font-size: 18px;
+  }
+  
+  .main-btn1 {
+    display: inline-block;
+    padding: 20px 0;
+    width: 300px;
+    background-color:red;
+    border-radius: 100px;
+    opacity: 1;
+    margin-bottom: 15px;
+  
+  }
+  
+  .main-btn2 {
+    display: inline-block;
+    padding: 20px 0;
+    width: 300px;
+    background-color:blue;
+    border-radius: 100px;
+    opacity: 1;
+    margin-bottom: 15px;
+  }
+  
+  .main-btn3 {
+    display: inline-block;
+    padding: 20px 0;
+    width: 300px;
+    background-color:green;
+    border-radius: 100px;
+    opacity: 1;
+    margin-bottom: 15px;
+  }
+  
+  .main-btn :hover {
+    text-decoration: none;
+    color: #ffff;
+  }
+
+
+
+  .contents-wrapper {
+    background-image: url('/pile-up2.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .contents-wrapper-main {
+    margin: 100px 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background:rgba(255,255,255,0.7);
+    width: 80%;
+    height: 500px;
+    border-radius: 100px;
+    display: inline-block;
+  }
+  
+  .contents-title {
+  
+  }
+  
+  .contents-title h1 {
+    font-size: 42px;
+    padding-bottom: 20px;
+  }
+  
+  .contents-title p {
+    font-size: 18px;
+  }
+  

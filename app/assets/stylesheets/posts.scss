@@ -1,0 +1,159 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user-wrapper {
+    padding-top: 50px;
+    }
+    
+    .user-left {
+      width: 20%;
+      height: 100%;
+      display: inline-block;
+      float: left;
+      padding-left: 50px;
+    }
+    
+    .user-img {
+    
+    }
+    
+    .user-img img {
+    width: 200px;
+    height: 200px;
+    }
+    
+    .user-profile {
+      padding-left: 10px;
+    }
+    
+    .user-profile h1 {
+    
+    }
+    
+    .user-profile h2 {
+    
+    }
+    
+    .user-profile h3 {
+    
+    }
+    
+    .user-right {
+      width: 70%;
+      height: 100%;
+      display: inline-block;
+      float: left;
+      padding-left: 50px;
+    }
+    
+    .user-contents {
+    
+    }
+    
+    .user-content {
+      border-bottom: solid 1px gray;
+      height: 70px;
+      padding-top: 25px;
+      width: 900px;
+      padding-left: 10px;
+    }
+    
+    .user-content p {
+      display: inline-block;
+      float: left;
+    }
+    
+    .time {
+      width: 100px;
+    }
+    
+    .content {
+      width: 200px;
+    }
+    
+    .matter {
+     width: 400px;
+    }
+    
+
+
+
+
+    .edit-wrapper {
+        background-image: url('/pile-up1.jpg');
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        text-align: center;
+      }
+      
+      .edit-wrapper-main {
+        margin: 100px 0;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        background:rgba(255,255,255,0.7);
+        width: 500px;
+        height: 630px;
+        border-radius: 100px;
+        display: inline-block;
+      }
+      
+      .edit-title {
+      
+      }
+      
+      .edit-title h1 {
+        font-size: 56px;
+        padding-bottom: 20px;
+      }
+      
+      .edit-contents {
+      padding-left: 50px;
+      text-align: left;
+      }
+      
+      .edit-content {
+        margin-bottom: 15px;
+      }
+      
+      .edit-1 {
+        width: 150px;
+      }
+      
+      .edit-2 {
+        width: 300px;
+      }
+      
+      .edit-content p {
+      margin-bottom: 5px;
+      text-align: left;
+      }
+      
+      .edit-content input {
+      
+      }
+      
+      .edit-time {
+      width: 100px;
+      }
+      
+      .edit-thing {
+      width: 300px;
+      }
+      
+      .edit-content textarea {
+       width: 400px;
+      }
+      
+      .edit-submit {
+        background-color: white;
+        width: 200px;
+        text-align: center;
+        height: 40px;
+        font-size: 18px;;
+      }
+      
+      .edit-link {
+          color:black;
+      }

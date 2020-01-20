@@ -1,0 +1,78 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.signup-wrapper {
+    background-image: url('/pile-up1.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .signup-wrapper-main {
+    margin: 100px 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background:rgba(255,255,255,0.7);
+    width: 500px;
+    height: 630px;
+    border-radius: 100px;
+    display: inline-block;
+  }
+  
+  .signup-title {
+  
+  }
+  
+  .signup-title h1 {
+    font-size: 56px;
+    padding-bottom: 20px;
+  }
+  
+  .signup-contents {
+  padding-left: 50px;
+  text-align: left;
+  }
+  
+  .signup-content {
+    margin-bottom: 15px;
+  }
+  
+  .signup-1 {
+    width: 400px;
+  }
+  
+  .signup-2 {
+    width: 400px;
+  }
+  
+  .signup-content p {
+  margin-bottom: 5px;
+  text-align: left;
+  }
+  
+  .signup-content input {
+  
+  }
+  
+  .signup-time {
+  width: 400px;
+  }
+  
+  .signup-thing {
+  width: 400px;
+  }
+  
+  .signup-content textarea {
+   width: 400px;
+  }
+  
+  .signup-submit {
+    background-color: white;
+    width: 200px;
+    text-align: center;
+  }
+  
