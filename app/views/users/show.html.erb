@@ -17,7 +17,7 @@
 
             <div class="user-time">
               <p>積み上げ総時間</p>
-              <h2>40分</h2>
+              <h2><%= post.all.sum(:time) %></h2>
             </div>
           </div>
         </div>
