@@ -8,7 +8,8 @@ class UsersController < ApplicationController
 
     def show
       @user = User.find_by(id: params[:id])
-
+      @post = Post.where(user_id: @user.id)
+      
     end
 
     def new
@@ -78,11 +79,11 @@ class UsersController < ApplicationController
         redirect_to("/login")
       end
 
+
       def ensure_correct_user
         if @current_user.id != params[:id].to_i
-          redirect_to("/users/#{@user.id}")
+          flash[:notice] = "権限がありません"
+          redirect_to("/posts/index")
         end
       end
-
-
 end
