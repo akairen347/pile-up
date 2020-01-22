@@ -8,14 +8,14 @@
 
             <div class="edit-content edit-1">
               <p>今日の積み上げ時間</p>
-              
+
               <%= form_tag("/posts/#{@post.id}/update") do %>
-              <p><textarea class="edit-time" type="text" name="time" value="<%= @post.time %>">   </textarea>分</P>
+              <p><textarea name="time" class="edit-time" type="text"  value="<%= @post.time %>">   </textarea>分</P>
             </div>
 
             <div class="edit-content edit-2">
               <p>今日やったこと</p>
-              <textarea class="edit-thing" type="text" name="type" value="<%= @post.type %>">   </textarea>
+              <textarea name="type" class="edit-thing" type="text"  value="<%= @post.type %>">   </textarea>
             </div>
 
             <div class="edit-content">

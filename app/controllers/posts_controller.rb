@@ -28,7 +28,7 @@ class PostsController < ApplicationController
       user_id: @current_user.id
     )
     if @post.save
-      redirect_to("/users/#{@user.id}")
+      redirect_to("/users/#{@current_user.id}")
     else
       render("posts/new")
     end
@@ -43,6 +43,9 @@ class PostsController < ApplicationController
   def update
     @post = Post.find_by(id: params[:id])
     @post.content = params[:content]
+    @post.content = params.permit(:content)[:content]
+    @post.time = params.permit(:time)[:time]
+    @post.type = params.permit(:type)[:type]
 
     if @post.save
       redirect_to("/users/#{@current_user.id}")
