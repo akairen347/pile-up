@@ -2,7 +2,8 @@
       <div class="cont">
 
         <div class="user-left">
-        #ユーザー画像はここに挿入
+        <!-- #ユーザー画像はここに挿入 -->
+        
           
 
           <div class="user-profile">
@@ -10,12 +11,12 @@
               <h3><%= @user.name %></h3>
             </div>
 
-
-            #ユーザー編集はここに挿入
+            <!-- #ユーザー編集はここに挿入 -->
+            
 
             <div class="user-time">
               <p>積み上げ総時間</p>
-              <h2><%= post.all.sum(:time) %></h2>
+              <h2><%= @post.all.sum(:time) %>分</h2>
             </div>
           </div>
         </div>

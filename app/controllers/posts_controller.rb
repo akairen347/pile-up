@@ -45,7 +45,7 @@ class PostsController < ApplicationController
     @post.content = params[:content]
 
     if @post.save
-      redirect_to("/users/#{@user.id}")
+      redirect_to("/users/#{@current_user.id}")
       
     else
       render("posts/edit")
@@ -55,7 +55,7 @@ class PostsController < ApplicationController
   def destroy
     @post = Post.find_by(id: params[:id])
     @post.destroy
-    redirect_to("/users/#{@user.id}")
+    redirect_to("/users/#{@current_user.id}")
   end
 
   
