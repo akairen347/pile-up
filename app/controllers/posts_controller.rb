@@ -22,10 +22,8 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(
-      content: params[:content],
-      type: params[:type],
-      time: params[:time],
-      user_id: @current_user.id
+      params.permit(:content,:type,:time).
+      mergeg(user_id: @current_user.id)
     )
     if @post.save
       redirect_to("/users/#{@current_user.id}")

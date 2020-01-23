@@ -2,7 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+a {
+  text-decoration: none;
+}
 
 .header-wrapper {
     width: 100%;
@@ -28,7 +30,7 @@
   
   .header-right {
     display: inline-block;
-    width: 500px;
+    width: 400px;
     float: right;
     padding-top: 20px;
   }
@@ -38,7 +40,7 @@
   }
   
   .header-link a {
-  margin-left: 30px;
+  margin-left: 20px;
   color: black;
   }
   
@@ -80,7 +82,7 @@
   }
   
   .main-title p {
-    font-size: 24px;
+    font-size: 22px;
   }
   
   .main-btn {
