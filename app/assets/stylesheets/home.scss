@@ -163,4 +163,132 @@ a {
   .contents-title p {
     font-size: 18px;
   }
+
+
+
+
+
+
+
+
+
+  @media (max-width:600px) {
+
+    .header-left {
+      width: 50px;
+      margin-left: 10px;
+    }
+
+    .header-left img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .header-right {
+      width: 270px;
+    }
+
+    .header-link a {
+      margin-left: 10px;
+      font-size: 12px;
+      }
+
+
+
+
+
+
+
+      .main-wrapper-main {
+        margin: 100px 0;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        background:rgba(255,255,255,0.7);
+        width: 500px;
+        height: 600px;
+        border-radius: 100px;
+        display: inline-block;
+      }
+      
+      .main-title {
+      
+      }
+      
+      .main-title h1 {
+        font-size: 56px;
+      }
+      
+      .main-title p {
+        font-size: 22px;
+      }
+      
+      .main-btn {
+       padding-top: 50px;
+      }
+      
+      .main-btn a {
+        color: #ffff;
+        font-size: 18px;
+      }
+      
+      .main-btn1 {
+        display: inline-block;
+        padding: 20px 0;
+        width: 300px;
+        background-color:red;
+        border-radius: 100px;
+        opacity: 1;
+        margin-bottom: 15px;
+      
+      }
+      
+      .main-btn2 {
+        display: inline-block;
+        padding: 20px 0;
+        width: 300px;
+        background-color:blue;
+        border-radius: 100px;
+        opacity: 1;
+        margin-bottom: 15px;
+      }
+      
+      .main-btn3 {
+        display: inline-block;
+        padding: 20px 0;
+        width: 300px;
+        background-color:green;
+        border-radius: 100px;
+        opacity: 1;
+        margin-bottom: 15px;
+      }
+
+
+
+      
+
+
+
+
+      .contents-wrapper-main {
+        background:rgba(255,255,255,0.7);
+        width: 300px !important;
+        height: 500px;
+        border-radius: 100px;
+        display: inline-block;
+      }
+      
+      .contents-title {
+      
+      }
+      
+      .contents-title h1 {
+        font-size: 30px;
+        padding-bottom: 20px;
+      }
+      
+      .contents-title p {
+        font-size: 18px;
+      }
+
+  }
   
