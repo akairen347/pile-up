@@ -272,7 +272,7 @@ a {
       .contents-wrapper-main {
         background:rgba(255,255,255,0.7);
         width: 300px ;
-        height: 600px;
+        height: 750px;
         border-radius: 100px;
         display: inline-block;
       }
@@ -288,6 +288,15 @@ a {
       
       .contents-title p {
         font-size: 14px;
+      }
+
+      .contents-wrapper-contents  {
+        text-align: left;
+        padding: 0 10px;
+      }
+
+      .contents-wrapper-contents p {
+        padding: 10px 0;
       }
 
   }

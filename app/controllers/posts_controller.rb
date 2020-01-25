@@ -31,6 +31,7 @@ class PostsController < ApplicationController
       redirect_to("/users/#{@current_user.id}")
     else
       render("posts/new")
+      flash[:notice] = "投稿に失敗しました"
     end
   end
 
