@@ -75,4 +75,38 @@
     width: 200px;
     text-align: center;
   }
+
+
+
+
+
+
+
+
+  @media (max-width:600px) {
+
+    .signup-wrapper-main {
+      margin: 100px 0;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      background:rgba(255,255,255,0.7);
+      width: 350px;
+      height: 500px;
+      border-radius: 100px;
+      display: inline-block;
+    }
+
+    .signup-time {
+      width: 250px;
+      }
+      
+      .signup-thing {
+      width: 250px;
+      }
+      
+      .signup-content textarea {
+       width: 250px;
+      }
+
+  }
   

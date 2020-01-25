@@ -157,3 +157,46 @@
       .edit-link {
           color:black;
       }
+
+
+
+
+
+
+
+      @media (max-width:600px) {
+
+        .edit-wrapper-main {
+          margin: 100px 0;
+          padding-top: 70px;
+          padding-bottom: 70px;
+          background:rgba(255,255,255,0.7);
+          width: 300px;
+          height: 500px;
+          border-radius: 100px;
+          display: inline-block;
+        }
+
+        .edit-title h1 {
+          font-size: 30px;
+          padding-bottom: 20px;
+        }
+
+        .edit-contents {
+          padding-left: 20px;
+          text-align: left;
+          }
+
+          .edit-time {
+            width: 100px !important;
+            }
+            
+            .edit-thing {
+            width: 250px;
+            }
+            
+            .edit-content textarea {
+             width: 250px;
+            }
+
+      }

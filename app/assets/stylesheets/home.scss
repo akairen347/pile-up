@@ -185,7 +185,7 @@ a {
     }
 
     .header-right {
-      width: 270px;
+      width: 290px;
     }
 
     .header-link a {
@@ -204,8 +204,8 @@ a {
         padding-top: 70px;
         padding-bottom: 70px;
         background:rgba(255,255,255,0.7);
-        width: 500px;
-        height: 600px;
+        width: 300px;
+        height: 450px;
         border-radius: 100px;
         display: inline-block;
       }
@@ -215,11 +215,11 @@ a {
       }
       
       .main-title h1 {
-        font-size: 56px;
+        font-size: 30px;
       }
       
       .main-title p {
-        font-size: 22px;
+        font-size: 14px;
       }
       
       .main-btn {
@@ -234,7 +234,7 @@ a {
       .main-btn1 {
         display: inline-block;
         padding: 20px 0;
-        width: 300px;
+        width: 280px;
         background-color:red;
         border-radius: 100px;
         opacity: 1;
@@ -245,7 +245,7 @@ a {
       .main-btn2 {
         display: inline-block;
         padding: 20px 0;
-        width: 300px;
+        width: 280px;
         background-color:blue;
         border-radius: 100px;
         opacity: 1;
@@ -255,7 +255,7 @@ a {
       .main-btn3 {
         display: inline-block;
         padding: 20px 0;
-        width: 300px;
+        width: 280px;
         background-color:green;
         border-radius: 100px;
         opacity: 1;
@@ -264,15 +264,15 @@ a {
 
 
 
-      
+
 
 
 
 
       .contents-wrapper-main {
         background:rgba(255,255,255,0.7);
-        width: 300px !important;
-        height: 500px;
+        width: 300px ;
+        height: 600px;
         border-radius: 100px;
         display: inline-block;
       }
@@ -287,7 +287,7 @@ a {
       }
       
       .contents-title p {
-        font-size: 18px;
+        font-size: 14px;
       }
 
   }
