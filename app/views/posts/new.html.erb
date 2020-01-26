@@ -4,11 +4,11 @@
           <div class="edit-title">
            <h1>今日の積み上げ</h1>
           </div>
-          <div class="edit-contents">
 
+          <div class="edit-contents">
+           <%= form_tag("/posts/create") do %>
             <div class="edit-content edit-1">
               <p>今日の積み上げ時間</p>
-              <%= form_tag("/posts/create") do %>
               <p><textarea class="edit-time" type="text" name="time" value="">   </textarea>分</P>
             </div>
 

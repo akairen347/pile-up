@@ -27,11 +27,12 @@ class PostsController < ApplicationController
       time: params[:time],
       user_id: @current_user.id
     )
+
+    
     if @post.save
       redirect_to("/users/#{@current_user.id}")
     else
       render("posts/new")
-      flash[:notice] = "投稿に失敗しました"
     end
   end
 
