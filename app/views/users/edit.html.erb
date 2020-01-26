@@ -6,8 +6,8 @@
           </div>
           <div class="signup-contents">
 
+          <%= form_tag("/users/#{@user.id}/update", {multipart: true}) do %>
             <div class="signup-content signup-1">
-            <%= form_tag("/users/#{@user.id}/update", {multipart: true}) do %>
               <p>ユーザー名</p>
               <input class="signup-time" type="text" name="name" value="<%= @user.name %>">
             </div>
