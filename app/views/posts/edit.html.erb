@@ -9,17 +9,17 @@
            <%= form_tag("/posts/#{@post.id}/update") do %>
             <div class="edit-content edit-1">
               <p>今日の積み上げ時間</p>
-              <p><textarea name="time" class="edit-time" type="text"  value="<%= @post.time %>">   </textarea>分</P>
+              <p><textarea name="time" class="edit-time" type="text"  value="">  <%= @post.time %> </textarea>分</P>
             </div>
 
             <div class="edit-content edit-2">
               <p>今日やったこと</p>
-              <textarea name="type" class="edit-thing" type="text"  value="<%= @post.type %>">   </textarea>
+              <textarea name="type" class="edit-thing" type="text"  value="">  <%= @post.type %> </textarea>
             </div>
 
             <div class="edit-content">
               <p>具体的な内容</p>
-              <textarea name="content" rows="8" cols="80" value="<%= @post.content %>" > </textarea>
+              <textarea name="content" rows="8" cols="80" value="" > <%= @post.content %> </textarea>
             </div>
             
             <input class="edit-submit" type="submit" name="" value="投稿">
