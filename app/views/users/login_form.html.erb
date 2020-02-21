@@ -13,8 +13,10 @@
           </div>
         <% end %>
 
+
+
+          <%= form_tag("/login") do %>
             <div class="signup-content signup-1">
-            <%= form_tag("/login") do %>
               <p>メールアドレス</p>
               <input class="signup-time" type="text" name="email" value="<%= @email %>">
             </div>
