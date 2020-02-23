@@ -17,4 +17,17 @@ class Post < ApplicationRecord
         return User.find_by(id: self.user_id)
       end
 
+
+
+      def find_or_create_from_auth(auth,id)
+        user = User.find(id)
+        provider = auth[:provider]
+        uid = auth[:uid]
+        nickname = auth[:info][:nickname]
+        name = auth[:info][:name]
+        image_url = auth[:info][:image]
+        description = auth[:info][:description]
+        user.update_attributes(id: id, provider: provider, uid: uid, nickname: nickname, name: name, description: description)
+      end
+
 end

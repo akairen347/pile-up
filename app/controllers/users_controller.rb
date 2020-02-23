@@ -86,4 +86,9 @@ class UsersController < ApplicationController
           redirect_to("/posts/index")
         end
       end
+
+
+
+
+      
 end

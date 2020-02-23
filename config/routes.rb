@@ -28,5 +28,13 @@ Rails.application.routes.draw do
   #OK
   get "about" => "home#about"
   #OK
+
+
+
+
+  get '/auth/twitter/callback', to: 'posts#creates'
+  get '/logout', to: 'posts#destroies'
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

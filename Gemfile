@@ -25,6 +25,12 @@ gem 'turbolinks', '~> 5'
 
 
 
+gem 'omniauth'
+gem 'omniauth-twitter'
+
+
+
+
 gem 'bcrypt'
 
 

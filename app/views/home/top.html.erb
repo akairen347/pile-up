@@ -19,6 +19,16 @@
               <a><%= link_to("ログイン", "/login") %></a>
             </div>
 
+            
+              <div class="main-btn2">
+              <% if session[:user_id]==nil %>
+                <%= link_to "Twitterログイン", "/auth/twitter"%>
+              <% else %>
+                <%= link_to "Twitterログアウト", "/auth/logout"%>
+              <% end %>
+              </div>
+            
+
             <div class="main-btn3">
               <a ><%= link_to("ピラプってなに？","/about") %></a>
             </div>
