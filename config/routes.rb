@@ -29,4 +29,16 @@ Rails.application.routes.draw do
   get "about" => "home#about"
   #OK
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+
+
+
+  get 'auth/:provider/callback' => 'users#create'#このpathを通して認証が行われる。
+
+  root 'home#top'
+
+
+  
+
+
 end
