@@ -29,6 +29,12 @@ gem 'bcrypt'
 
 
 
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'dotenv-rails'
+
+
+
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
