@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 a {
   text-decoration: none;
 }
@@ -30,7 +35,7 @@ a {
   
   .header-right {
     display: inline-block;
-    width: 400px;
+    width: 420px;
     float: right;
     padding-top: 20px;
   }
@@ -88,47 +93,90 @@ a {
   .main-btn {
    padding-top: 50px;
   }
+
+  .btn a {
+    
+  }
   
   .main-btn a {
-    color: #ffff;
+    color: black ;
+    display: inline-block;
     font-size: 18px;
+    font-weight: bold;
+  }
+
+  .main-btn :hover {
+    color: black;
   }
   
   .main-btn1 {
+    background: red;
+    border: 3px solid red;
     display: inline-block;
-    padding: 20px 0;
-    width: 300px;
-    background-color:red;
+    margin: 0 0 1em;
     border-radius: 100px;
-    opacity: 1;
-    margin-bottom: 15px;
-  
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    width: 300px;
+    padding: 15px 0;
+    opacity: 0.7;
+  }
+
+  .main-btn1　a {
+    color: #ffff !important;
+    
+  }
+
+  .main-btn1:hover {
+    background-color: #ffff;
+    color: red;
+    opacity: 0.5;
+  }
+
+  .main-btn1　a:hover {
+    color:red
   }
   
   .main-btn2 {
-    display: inline-block;
-    padding: 20px 0;
     width: 300px;
+    padding: 15px 0;
     background-color:blue;
-    border-radius: 100px;
-    opacity: 1;
-    margin-bottom: 15px;
+  border: 3px solid blue;
+  display: inline-block;
+  margin: 0 0 1em;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  opacity: 0.7;
+  }
+
+  .main-btn2:hover {
+    background-color: #ffff;
+    color: blue;
+    opacity: 0.5;
   }
   
   .main-btn3 {
-    display: inline-block;
-    padding: 20px 0;
     width: 300px;
+    padding: 15px 0;
     background-color:green;
-    border-radius: 100px;
-    opacity: 1;
-    margin-bottom: 15px;
+  border: 3px solid green;
+  display: inline-block;
+  margin: 0 0 1em;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  opacity: 0.7;
   }
+
+  .main-btn3:hover {
+    background-color: #ffff;
+    color: green;
+    opacity: 0.5;
+  }
+
+
   
-  .main-btn :hover {
-    text-decoration: none;
-    color: #ffff;
-  }
 
 
 
