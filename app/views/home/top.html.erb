@@ -5,31 +5,19 @@
     <div class="main-wrapper">
       <div class="cont">
         <div class="main-wrapper-main">
+
           <div class="main-title">
            <h1>ピラプ</h1>
            <p>あなたの頑張りを可視化するアプリケーション</p>
           </div>
+
           <div class="main-btn">
-
-          <div class="main-btn1">
-           <a ><%= link_to("新規登録はこちらから", "/signup") %></a>
+           <a class="main-btn1" href="/signup" >新規登録はこちらから</a>
+            <a class="main-btn2" href="/login" >ログイン</a>
+            <a class="main-btn3" href="/about" >ピラプってなに？</a>
+            <a class="main-btn3" href="/auth/twitter" >Twitterでログイン</a>
           </div>
-              
-            
-
-            <div class="main-btn2">
-              <a><%= link_to("ログイン", "/login") %></a>
-            </div>
-
-            <div class="main-btn3">
-              <a ><%= link_to("ピラプってなに？","/about") %></a>
-            </div>
-
-            <div class="main-btn3">
-              <a ><%= link_to('Twitterでログイン', '/auth/twitter') %></a>
-            </div>
-
-          </div>
+          
         </div>
       </div>
     </div>
