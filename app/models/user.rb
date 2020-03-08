@@ -24,9 +24,10 @@ class User < ApplicationRecord
     image_url = auth_hash[:info][:image]
  
     
-    self.find_or_create_by(provider: provider,uid: uid) do |user|
+    self.find_or_initialize_by(provider: provider,uid: uid) do |user|
       user.username = name
       user.image_url = image_url
+      user.activated = true
     end
    end
    #twitter認証の
