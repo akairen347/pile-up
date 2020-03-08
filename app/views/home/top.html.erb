@@ -12,10 +12,18 @@
           </div>
 
           <div class="main-btn">
-           <a class="main-btn1" href="/signup" >新規登録はこちらから</a>
-            <a class="main-btn2" href="/login" >ログイン</a>
-            <a class="main-btn3" href="/about" >ピラプってなに？</a>
+
+          <% if @current_user %>
+            <a class="main-btn1" href="posts/new" >新規投稿</a>
+            <a class="main-btn2" href="users/:id" >マイページ</a>
+            <a class="main-btn3" href="/logout" >ログアウト</a>
+
+            <% else %>
+            <a class="main-btn1" href="/signup" >新規登録はこちらから</a>
+            <a class="main-btn2" href="/login" >メールアドレスでログイン</a>
             <a class="main-btn3" href="/auth/twitter" >Twitterでログイン</a>
+            <% end %>
+           
           </div>
           
         </div>

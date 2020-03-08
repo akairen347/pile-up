@@ -11,21 +11,15 @@
           </div>
           <div class="main-btn">
 
-            <div class="main-btn1 hover1">
-              <a><%= link_to("新規登録", "/signup") %></a>
-            </div>
+            <% if @current_user %>
+            <a class="main-btn1" href="/posts/new" >新規投稿</a>
+            <a class="main-btn2" href="/users/#{@user.id}" >マイページ</a>
 
-            <div class="main-btn2">
-              <a><%= link_to("ログイン", "/login") %></a>
-            </div>
-
-            <div class="main-btn3">
-              <a ><%= link_to("ピラプってなに？","/about") %></a>
-            </div>
-
-            <div class="main-btn3">
-              <a ><%= link_to('Twitterでログイン', '/auth/twitter') %></a>
-            </div>
+            <% else %>
+            <a class="main-btn1" href="/signup" >新規登録はこちらから</a>
+            <a class="main-btn2" href="/login" >メールアドレスでログイン</a>
+            <a class="main-btn3" href="/auth/twitter" >Twitterでログイン</a>
+            <% end %>
 
           </div>
         </div>

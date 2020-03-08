@@ -38,12 +38,19 @@ class UsersController < ApplicationController
      #twitter認証の
     def creates
 
+      @user = User.new(
+        name: params[:name],
+        email: params[:email],
+        image_name: "pile-up3.jpg",
+        password: params[:password]
+      )
+
       user = User.find_or_create_from_auth_hash(request.env['omniauth.auth'])#request.env['omniauth.auth']はTwitter認証で得た情報を格納するもの
     if user
       session[:user_id] = user.id
-      redirect_to '/posts/index', notice: "ログインしました。"
+      redirect_to("/users/#{user.id}")
     else
-      redirect_to root_path, notice: "失敗しました。"
+      redirect_to root_path
     end
 
     end
@@ -96,7 +103,7 @@ class UsersController < ApplicationController
 
       def logout
         session[:user_id] = nil
-        redirect_to("/login")
+        redirect_to("/")
       end
 
 
