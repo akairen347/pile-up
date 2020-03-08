@@ -31,6 +31,20 @@ class UsersController < ApplicationController
       else
         render("users/new")
       end
+
+
+
+      
+    #twitter認証の
+    user = User.find_or_create_from_auth_hash(request.env['omniauth.auth'])#request.env['omniauth.auth']はTwitter認証で得た情報を格納するもの
+    if user
+      session[:user_id] = user.id
+      redirect_to '/posts/index', notice: "ログインしました。"
+    else
+      redirect_to root_path, notice: "失敗しました。"
+    end
+        #twitter認証の
+     
     end
 
     def edit
