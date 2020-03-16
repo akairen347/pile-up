@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+  get "/" => "home#top"
 
   post "login" => "users#login"
   #OK
@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   get "posts/:id/edit" => "posts#edit"
   post "posts/:id/update" => "posts#update"
   post "posts/:id/destroy" =>"posts#destroy"
-  get "/" => "home#top"
+  
   #OK
   get "about" => "home#about"
   #OK
