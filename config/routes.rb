@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root  'users#index'
+  
   post "login" => "users#login"
   #OK
   get "login" => "users#login_form"
